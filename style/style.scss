@@ -1,0 +1,79 @@
+@import '_vars.scss';
+
+/* STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+   position: relative;
+   height: 100vh;
+   width: auto;
+   background-image: linear-gradient($firstColor, $secoundColor);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Kumbh Sans', sans-serfi;
+}
+
+.main {
+    width: 70%;
+    background-color: $mainBackground;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+
+    &__images {
+        width: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-image: url('../images/illustration-woman-online-desktop.svg'), url('../images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain, auto;
+        background-position: top 50% right 50px, top 60% right 50px;
+    }
+
+    &__faq {
+        width: 50%;
+        height: auto;
+        padding: 4.5rem;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 200%;
+        color: $secoundTextColor;
+        margin-bottom: 1.5rem;
+    }
+
+    &__questions {
+        list-style-type: none;
+        color: $primaryTextColor;
+    }
+
+    &__question {
+        border-bottom: 1px solid $dividersColor;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: color 0.2s linear;
+
+        &:hover {
+            cursor: pointer;
+            color: $hoverTextColor;
+            transition: color 0.2s linear;
+        }
+    }
+}
+
+.attribution{
+    position: absolute;
+    bottom: 1rem;
+}
+
+

@@ -1,0 +1,102 @@
+/* Colors for background gradient */
+/* Main element color background */
+/* Text colors */
+/* Other colors */
+/* Font style */
+/* STYLES */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Kumbh Sans', sans-serfi;
+}
+
+.main {
+  width: 70%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.main__images {
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain, auto;
+  background-position: top 50% right 50px, top 60% right 50px;
+}
+
+.main__faq {
+  width: 50%;
+  height: auto;
+  padding: 4.5rem;
+}
+
+.main__header {
+  font-weight: 700;
+  font-size: 200%;
+  color: #1d1e35;
+  margin-bottom: 1.5rem;
+}
+
+.main__questions {
+  list-style-type: none;
+  color: #4a4b5e;
+}
+
+.main__question {
+  border-bottom: 1px solid #e7e7e9;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.main__question:hover {
+  cursor: pointer;
+  color: #f47c57;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
