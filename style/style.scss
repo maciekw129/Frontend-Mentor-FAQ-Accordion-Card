@@ -94,12 +94,12 @@
         justify-content: space-between;
         align-items: center;
         transition: color 0.2s linear;
+    }
 
-        &:hover {
-            cursor: pointer;
+    &__question:hover {
+        cursor: pointer;
             color: $hoverTextColor;
             transition: color 0.2s linear;
-        }
     }
 
     &__arrow {

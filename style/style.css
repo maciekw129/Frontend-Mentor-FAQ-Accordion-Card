@@ -124,7 +124,7 @@
   transition: color 0.2s linear;
 }
 
-.main__question-container:hover {
+.main__question:hover {
   cursor: pointer;
   color: #f47c57;
   -webkit-transition: color 0.2s linear;
