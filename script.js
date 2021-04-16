@@ -5,10 +5,10 @@
 /* FUNCTION FOR SHOWING ANSWER */
 
  const showAnswer = (event) => {
-    const answer = event.target.parentNode.nextElementSibling.firstChild;
+    const answer = event.target.parentNode.nextElementSibling;
     const arrow = event.target.parentNode.lastChild;
     const question = event.target.parentNode;
-    answer.style.maxHeight = '100px';
+    answer.style.maxHeight = '200px';
     arrow.style.transform = 'rotate(180deg)';
     question.style.fontWeight = 'bold';
     question.removeEventListener('click', event => showAnswer(event));
@@ -18,7 +18,7 @@
  /* FUNCTION FOR HIDING ANSWER */
 
  const hideAnswer = (event) => {
-    const answer = event.target.parentNode.nextElementSibling.firstChild;
+    const answer = event.target.parentNode.nextElementSibling;
     const arrow = event.target.parentNode.lastChild;
     const question = event.target.parentNode;
     answer.style.maxHeight = '0';

@@ -1,4 +1,4 @@
-@import '_vars.scss';
+@import '_vars.scss'; // --> IMPORTING VARIABLES 
 
 /* STYLES */
 
@@ -10,10 +10,15 @@
 
 .body {
    position: relative;
-   height: 100vh;
+   min-height: 100vh;
+   height: 100%;
    width: auto;
+   padding-top: 3.5rem;
    background-image: linear-gradient($firstColor, $secoundColor);
+   background-repeat: no-repeat;
+   background-size: cover;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    font-family: 'Kumbh Sans', sans-serfi;
@@ -27,12 +32,16 @@
     display: flex;
 
 
-    &__images {
+    &__images-desktop {
         width: 50%;
         position: relative;
         display: flex;
         align-items: center;
         overflow: hidden;
+    }
+
+    &__images-mobile {
+        display: none;
     }
 
     &__box {
@@ -45,7 +54,7 @@
         z-index: 99;
     }
 
-    &__woman {
+    &__woman-desktop {
         position: absolute;
         width: 100%;
         height: auto;
@@ -53,7 +62,7 @@
         right: 19%;
     }
 
-    &__pattern {
+    &__pattern-desktop {
         position: absolute;
         width: 200%;
         height: auto;
@@ -62,8 +71,8 @@
     }
 
     &__faq {
-        height: auto;
-        padding: 5rem 4rem;
+        padding: 5rem 2rem;
+        padding-left: 0;
         width: 50%;
     }
 
@@ -74,7 +83,7 @@
         margin-bottom: 2.25rem;
     }
 
-    &__questions {
+    &__questions-container {
         list-style-type: none;
         color: $primaryTextColor;
     }
@@ -94,28 +103,78 @@
     }
 
     &__arrow {
-        margin-left: 4.5rem;
+        margin-left: 0.5rem;
         transition: transform 0.2s linear;
     }
 
     &__answer-container {
         border-bottom: 1px solid $dividersColor;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s linear;
     }
 
     &__answer {
         margin: 1rem 0;
-        max-height: 0;
-        overflow: hidden;
         font-size: 90%;
         line-height: 1.25rem;
         color: $hiddenTextColor;
-        transition: max-height 0.2s linear;
     }
 }
 
-.attribution{
-    position: absolute;
-    bottom: 1rem;
+/* MEDIA QUERIES FOR MOBILE VERSION */
+
+@media only screen and (max-width: 560px) {
+    .body {
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-top: 5rem;
+
+        &__images-desktop {
+            display: none;
+        }
+
+        &__images-mobile {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        &__woman-mobile {
+            position: absolute;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        &__box {
+            display: none;
+        }
+
+        &__faq {
+            width: 100%;
+            padding: 3rem 1.5rem;
+        }
+
+        &__header {
+            text-align: center;
+        }
+    }
+
+}
+
+/* ATTRIBUTION FOOTER */
+
+.attribution {
+    margin: 1.75rem 0;
+    line-height: 1.5rem;
+    text-align: center;
 }
 
 
