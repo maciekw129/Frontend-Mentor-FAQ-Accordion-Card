@@ -109,7 +109,7 @@
   color: #4a4b5e;
 }
 
-.main__question {
+.main__question-container {
   margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +124,7 @@
   transition: color 0.2s linear;
 }
 
-.main__question:hover {
+.main__question-container:hover {
   cursor: pointer;
   color: #f47c57;
   -webkit-transition: color 0.2s linear;

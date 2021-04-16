@@ -6,8 +6,8 @@
 
  const showAnswer = (event) => {
     const answer = event.target.parentNode.nextElementSibling;
-    const arrow = event.target.parentNode.lastChild;
-    const question = event.target.parentNode;
+    const arrow = event.target.nextElementSibling;
+    const question = event.target;
     answer.style.maxHeight = '200px';
     arrow.style.transform = 'rotate(180deg)';
     question.style.fontWeight = 'bold';
@@ -19,8 +19,8 @@
 
  const hideAnswer = (event) => {
     const answer = event.target.parentNode.nextElementSibling;
-    const arrow = event.target.parentNode.lastChild;
-    const question = event.target.parentNode;
+    const arrow = event.target.nextElementSibling;
+    const question = event.target;
     answer.style.maxHeight = '0';
     arrow.style.transform = 'rotate(0)';
     question.style.fontWeight = 'normal';
