@@ -27,7 +27,7 @@
 .main {
     position: relative;
     width: 70%;
-    height: 70%;
+    height: 80%;
     background-color: $mainBackground;
     border-radius: 15px;
     display: flex;
@@ -72,7 +72,8 @@
     }
 
     &__faq {
-        margin-top: 10%;
+        padding-top: 10%;
+        padding-bottom: 1rem;
         padding-left: 0;
         padding-right: 2rem;
         width: 50%;
@@ -133,7 +134,7 @@
 
 /* MEDIA QUERIES FOR MOBILE VERSION */
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 520px) {
     .body {
         height: 100%;
         min-height: 100vh;
