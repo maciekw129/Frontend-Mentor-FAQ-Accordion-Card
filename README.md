@@ -6,6 +6,6 @@ Project is from Frontend Mentor site: https://www.frontendmentor.io/challenges/f
 * HTML5, BEM
 * SCSS
 * JavaScript  
-# Setup
+## Setup
 Site is published live here:  https://maciekw129.github.io/Frontend-Mentor-FAQ-Accordion-Card/
 
